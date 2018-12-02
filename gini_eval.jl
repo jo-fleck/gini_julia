@@ -54,8 +54,8 @@ x = res_perf[:,3]
 
 using PyPlot
 clf()   # clear current plot
-semilogx(x,y1, label = "gini with vector input")
-semilogx(x,y2, label = "gini with array input (for weights)")
+semilogx(x,y1, label = "gini.jl with vector input")
+semilogx(x,y2, label = "gini.jl with array input (for weights)")
 xlabel(L"Number of observations ($10^6$ = 1.000.000 = 1 mio)")
 ylabel("Elapsed time (in seconds)")
 legend() # turn on legend
